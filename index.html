@@ -15,6 +15,8 @@
 
 <body>
   <header id="header">
+
+    <!-- Main Nav -->
     <nav class="main-nav">
       <div class="main-nav--left">
         <a href="#" class="logo__link nav--item">
@@ -30,22 +32,60 @@
       </div>
 
       <form action="" class="main-nav--center nav--item">
-        <label for="searchDepartment"></label>
-        <select name="searchDepartment" id="searchDepartment">
-          <option value="" disabled selected hidden>All</option>
-          <option value="All Derpartments">All Derpartments</option>
-          <option value="Arts & Crafts">Arts & Crafts</option>
-          <option value="Aoutomotive">Aoutomotive</option>
-          <option value="Baby">Baby</option>
-          <option value="Beauty & Personal Care">Beauty & Personal Care</option>
-        </select>
+        <div class="leftColl">
+          <label for="searchDepartment"></label>
+
+          <select name="searchDepartment" id="searchDepartment">
+            <option value="all" disabled selected hidden>All</option>
+            <option value="allDerpartments">All Derpartments</option>
+            <option value="arts & Crafts">Arts & Crafts</option>
+            <option value="aoutomotive">Aoutomotive</option>
+            <option value="baby">Baby</option>
+            <option value="beauty">Beauty & Personal Care</option>
+          </select>
+        </div>
+        <input type="text" class="centerColl">
+        <div class="rightColl">
+          <input type="submit" value="" class="search">
+          <div class="search-ico"></div>
+        </div>
+
       </form>
 
-      <div class="main-nav--right"></div>
+      <div class="main-nav--right">
+        <div class="flag nav--item">
+          <button class="us-flag"></button>
+          <span class="trngl-dwn"></span>
+        </div>
+
+        <a href="" class="nav--item sighIn">
+          <div class="nav--item--smlText">Hello, Sign in</div>
+          <span class="nav--item--mdText">Acciunt & Lists</span>
+          <span class="trngl-dwn"></span>
+        </a>
+
+        <a href="" class="nav--item">
+          <div class="nav--item--smlText">Returns</div>
+          <span class="nav--item--mdText">& Orders</span>
+          <span class="trngl-dwn"></span>
+        </a>
+
+        <a href="" class="cart nav--item">
+          <span class="numItems"> 0</span>
+          <div class="cart-ico"></div>
+          <span class="nav--item--mdText">Cart</span>
+        </a>
+
+      </div>
     </nav>
+
+    <!-- Secondary Nav -->
     <nav class="secondary-nav">
       <div class="secondary-nav--left">
-        <a href="#" class="nav--item">All</a>
+        <a href="#" class="nav--item">
+          <div class="hamburger-ico"></div>
+          All
+        </a>
         <ul class="secondary-nav--list">
           <!-- <li><a href="#" class="nav--item">All</a></li> -->
           <li><a href="#" class="nav--item">Today's Deal</a></li>
@@ -75,10 +115,14 @@
       </ul>
     </div>
     <!-- <div class="grid-container"> -->
-    <div class="flex-container">
+
+    <!----------------- Product Container ---------------->
+    <div class="product-container bottom-border">
+
+      <!--------  Image Area -->
       <div class="imageArea">
 
-        <input type="radio" name="input_thumb" id="id1" />
+        <input type="radio" name="input_thumb" id="id1" checked="checked" />
         <label class="thumbnail__img" for="id1">
           <img src="/images/thumbnail1.jpg" alt="Image1" />
         </label>
@@ -121,8 +165,10 @@
         </label>
         <img class="big__img" src="/images/mainImg7.jpg" alt="Image7">
       </div>
+
+      <!--------   Product Info -->
       <div class="productInfo">
-        <div class="productInfo--title">
+        <div class="productInfo--title bottom-border">
           <h1>IUGA Pro Non Slip Yoga Mat, Unbeatable Non Slip Performance, Eco Friendly and SGS Certified Material for
             Hot Yoga, Odorless Lightweight and Extra Large Size, Free Carry Strap</h1>
           <a href="#">Visit the IUGA Store</a>
@@ -138,8 +184,34 @@
         </div>
         <div class="productInfo--price"></div>
         <div class="productInfo--features"></div>
-        <div class="productInfo--about"></div>
+        <div class="productInfo--about bottom-border">
+          <p class="about-title">About this item</p>
+          <ul>
+            <li>ULTIMATE GRIP – No Sliding and No Slipping: The polyurethane top layer away and absorbs for a Strong
+              Grip and Slip-Free surface. Technology designed to keep you with Absolute Safety and always in place no
+              matter what type of yoga you practice. It’s also perfect for all forms of yoga, especially Bikram,
+              Vinyasa, Ashtanga and various types of Hot Yoga</li>
+            <li>SGS CERTIFIED & ODORLESS MATERIAL: Unlike other natural rubber and PVC mats, there’s No Rubbery Smell
+              when you take it out of the package. Not only that, the Material can also Keep odors at bay so that your
+              mat always stays as fresh as the day you bought it.</li>
+            <li>LIGHTWEIGHT and DURABLE: There’s No Flaking, No Stretching or Falling Apart with our full-size Yoga
+              Mats. Weighing in at 2.5 lbs, less than HALF the weight of traditional rubber yoga mats, thus it’s perfect
+              for traveling or carrying it to and from the yoga studio.</li>
+            <li>100% ECO FRIENDLY PRODUCTS: We believe in creating Eco-Friendly Products that are Friendly for your
+              body, also Comfortable for your mind and spirit. Made of biodegradable and sustainably harvested tree
+              rubber, therefore the mat is Completely Free from PVC, Latex and other Materials. We all know that
+              breathing in unhealthy chemicals is hazardous to health and we always make sure it will never happen from
+              our products!</li>
+            <li>COMFORTABLE WITHOUT COMPROMISING PERFORMANCE: IUGA Pro Yoga Mat is the optimal combination of Cushioning
+              and Stability. The 5mm Cushion Base delivers comfort while providing a grounded feel to keep you stable
+              and support you sturdily in every pose. For those who need more room to spread out, we have an Extra-Large
+              Size (72”X26”) which will be IDEAL for them</li>
+          </ul>
+        </div>
+
       </div>
+
+      <!---------  Buy Area -->
       <div class="buyArea">
         <div class="buyArea--info">
           <div class="price">ILS 199.34</div>
@@ -153,7 +225,185 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
+
+
+    <!---------------Frequently bought together---------->
+    <div class="boughtTogether bottom-border">
+      <div class="carousel--title">
+        <div class="carousel--title--left">
+          <h2>Frequently bought together</h2>
+          <div class="sponsored">
+            <span>Sponsored</span>
+            <svg aria-hidden="true" class="sp_detail_info_icon" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                d="M256,9C119,9,8,120.08,8,257S119,505,256,505,504,394,504,257,393,9,256,9Zm0,76.31A47.69,47.69,0,1,1,208.31,133,47.69,47.69,0,0,1,256,85.31Zm38.15,332.38a12.18,12.18,0,0,1-12.21,12H229.67a11.85,11.85,0,0,1-11.82-12V249.92a11.86,11.86,0,0,1,11.82-12h52.27a12.18,12.18,0,0,1,12.21,12Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-------------- Related Items Carousel ------------->
+    <div class="relatedItems carousel bottom-border">
+
+      <div class="carousel--title">
+        <div class="carousel--title--left">
+          <h2>Products related to this item</h2>
+          <div class="sponsored">
+            <span>Sponsored</span>
+            <svg aria-hidden="true" class="sp_detail_info_icon" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512">
+              <path
+                d="M256,9C119,9,8,120.08,8,257S119,505,256,505,504,394,504,257,393,9,256,9Zm0,76.31A47.69,47.69,0,1,1,208.31,133,47.69,47.69,0,0,1,256,85.31Zm38.15,332.38a12.18,12.18,0,0,1-12.21,12H229.67a11.85,11.85,0,0,1-11.82-12V249.92a11.86,11.86,0,0,1,11.82-12h52.27a12.18,12.18,0,0,1,12.21,12Z">
+              </path>
+            </svg>
+          </div>
+        </div>
+        <div class="carousel--title--right">
+          <span>Page 1 of 48</span>
+        </div>
+      </div>
+      <div class="carousel--row">
+        <div class="carousel--btn--left">
+          <div class="carousel--btn">
+            <div class="left--ico"></div>
+          </div>
+        </div>
+
+        <div class="carousel--container">
+          <ul class="carousel--items">
+            <li class="itemCard related1">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related2">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related3">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related4">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related5">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related6">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+            <li class="itemCard related7">
+              <a class="itemCard--link" href="">
+                <img src="" alt="">
+                <div class="itemCard--img"></div>
+                Gruper Yoga Mat Non Slip,TPE 6MM 8MM Thick Exercise Mat with Carrying Strap,Yoga Ma...
+                <div class="itemCard--rating">
+                  <p class="productInfo--title--rating">
+                    <a href="#" class="title--stars"></a><a href="">1,887</a>
+                  </p>
+                </div>
+                <div class="itemCard--price">
+                  <div class="itemCard--price__span price">ILS 143.08<div class="itemCard--price--prime"></div>
+                  </div>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="carousel--btn--right">
+          <div class="carousel--btn">
+            <div class="right--ico"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </main>
 </body>
 
